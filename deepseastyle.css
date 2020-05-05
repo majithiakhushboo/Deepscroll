@@ -1,0 +1,158 @@
+﻿
+* {
+	margin:0;
+	padding:0;
+}
+body, html
+{
+ font-family:Roboto,sans-serif, bold;
+ color:#333;
+ padding:0;
+ margin:0;
+ /*background-color:#006f94;*/
+ touch-action:manipulation;
+ }
+ .heading{
+ 	 text-align: center;
+    color: rgb(44, 44, 84);
+    font-size: 76px;
+    font-weight: bold; 
+ }
+
+ .madeby{
+ 	 color: rgb(77, 77, 128);
+    font-size: 26px;
+    text-align: center;
+    margin-top: 15px;
+    font-family: Oswald, sans-serif;
+ }
+ .madeby img {
+ 	 width: 30px;
+ }
+
+ #stickyy {
+ position: sticky;
+ position: -webkit-sticky;
+    top: 500px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    padding-bottom: 10px;
+    font-size: 28px;
+    transform: translateY(-50%);
+    color: white;
+    z-index: 3;
+    font-family: Roboto, sans-serif;
+    opacity: 1;
+    border-bottom: 1px dashed #000000;
+    transition: opacity 0.3s ease-in-out 0s;
+}
+
+.wave {
+
+    position: relative;
+    z-index: 999;
+    bottom: 10px;
+
+}
+ 
+
+/*.category,
+.title,
+.stickyy
+{
+  position: -webkit-sticky; 
+  position: sticky;
+  height: 50px;
+  
+}
+*/
+
+section {
+position: relative;
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(#1fc8db, #f1f1f1);
+
+}
+ section .sec1{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 100px;
+	background: url(wave.png);
+	background-size: 1400px 100px;
+	
+}
+section .sec1.wave1 {
+
+animation: animate 30s linear infinite;
+z-index: 1000;
+opacity: 1;
+animation-delay: 0s;
+bottom: 0;
+}
+section .sec1.wave2 {
+
+animation: animate2 15s linear infinite;
+z-index: 999;
+opacity: 0.5;
+animation-delay: -5s;
+bottom: 10;
+}
+section .sec1.wave3 {
+
+animation: animate 30s linear infinite;
+z-index: 998;
+opacity: 0.2;
+animation-delay: -2s;
+bottom: 15;
+}
+section .sec1.wave4 {
+
+animation: animate2 5s linear infinite;
+z-index: 997;
+opacity: 0.7;
+animation-delay: -5s;
+bottom: 20px;
+}
+@keyframes animate {
+
+	0%{
+		background-position-x: 0; 
+	}
+	100%{
+		background-position-x: 1000px; 
+	}
+}
+@keyframes animate2 {
+
+	0%{
+		background-position-x: 0; 
+	}
+	100%{
+		background-position-x: -1000px; 
+	}
+}
+
+ 
+
+.title {
+  top: 0;
+}
+
+.footer {
+  bottom: 100px;
+  z-index: -1;
+}
+
+.deep {
+	
+	margin: 0px;
+	padding: 0px;
+	position: relative;
+	height: 500px;
+	background-image: linear-gradient(#008fbb, #005f86);
+	
+}
